@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Micro-Feign
+
+server:
+  port: 8899
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://127.0.0.1:1111/eureka/
+

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Micro-Eureka
+
+server:
+  port: 1111
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://127.0.0.1:${server.port}/eureka/
+
+
+

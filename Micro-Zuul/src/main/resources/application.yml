@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Micro-Zuul
+
+server:
+  port: 2021
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://127.0.0.1:1111/eureka/
+zuul:
+  routes:
+    api:
+      path: /api/**
+      serviceId: Micro-Feign
+
+
